@@ -1,0 +1,24 @@
+From 916d3c42b24229a36130a2dfd9cd82805d953459 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Micha=C5=82=20Gapi=C5=84ski?= <mike@gapinski.eu>
+Date: Mon, 12 Jan 2026 20:28:59 +0000
+Subject: [PATCH 1/1] bcm2711: set PCIe link speed to Gen 1
+
+---
+ arch/arm/boot/dts/bcm2711.dtsi | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/arch/arm/boot/dts/bcm2711.dtsi b/arch/arm/boot/dts/bcm2711.dtsi
+index 941c4d167..4756b722b 100644
+--- a/arch/arm/boot/dts/bcm2711.dtsi
++++ b/arch/arm/boot/dts/bcm2711.dtsi
+@@ -558,6 +558,7 @@ pcie0: pcie@7d500000 {
+ 			#address-cells = <3>;
+ 			#interrupt-cells = <1>;
+ 			#size-cells = <2>;
++                        max-link-speed = <1>;
+ 			interrupts = <GIC_SPI 147 IRQ_TYPE_LEVEL_HIGH>,
+ 				     <GIC_SPI 148 IRQ_TYPE_LEVEL_HIGH>;
+ 			interrupt-names = "pcie", "msi";
+-- 
+2.34.1
+
