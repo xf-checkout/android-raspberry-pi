@@ -52,9 +52,9 @@ initial_turbo=60
 dtoverlay=i2c-rtc,ds3231
 
 # Moderate OC Profile
-over_voltage=5
-arm_freq=1800
-gpu_freq=600
-core_freq=550
-v3d_freq=600
-h264_freq=550
+#over_voltage=5
+#arm_freq=1800
+#gpu_freq=600
+#core_freq=550
+#v3d_freq=600
+#h264_freq=550
